@@ -1,5 +1,5 @@
 #coding=utf-8
-
+#掃描整個網域，並比較是否有目標網頁名稱，將之存在output-XX.txt中
 import datetime
 import requests
 from bs4 import BeautifulSoup
@@ -7,7 +7,7 @@ import lxml
 
 a='NETSurveillance WEB'
 b=''
-subnet = 17
+subnet = 1
 subnet = str(subnet)
 
 count = 1

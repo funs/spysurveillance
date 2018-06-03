@@ -1,4 +1,5 @@
 #coding=utf-8
+#掃描整個網域的ip狀況，產出掃描結果存在ipwebscan_output.txt中
 
 import datetime
 import requests
@@ -48,5 +49,4 @@ def subnetScan2(subnet2,subnet3):
     
 if __name__ == '__main__':
 	print('start')
-	subnetScan2(32,2)
-    
+	subnetScan2(32,1)
