@@ -49,10 +49,10 @@ def subnetScan(subnet2,subnet3):
 				urllogin = url+'Login.htm'
 				#print(urllogin)
 				#count =count+1
-				print('title pass')
+				#print('title pass')
 				if checklogin(urllogin):
 					iplist.append(urllogin)
-					print('pwd pass')
+					#print('pwd pass')
 			else:
 				'do nothing'
 		except:
