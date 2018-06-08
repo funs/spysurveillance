@@ -49,4 +49,5 @@ def subnetScan2(subnet2,subnet3):
     
 if __name__ == '__main__':
 	print('start')
-	subnetScan2(32,1)
+	for i in range(0,256,1):
+		subnetScan2(35,i)
