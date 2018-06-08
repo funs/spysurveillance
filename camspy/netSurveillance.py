@@ -51,7 +51,8 @@ def subnetScan(subnet2,subnet3):
 				#count =count+1
 				#print('title pass')
 				if checklogin(urllogin):
-					iplist.append(urllogin)
+					#iplist.append(urllogin)
+					iplist.append(url)
 					#print('pwd pass')
 			else:
 				'do nothing'
@@ -62,10 +63,10 @@ def subnetScan(subnet2,subnet3):
 	print('done for '+str(subnet3)+' subnet: '+ str(len(iplist)) +' IPs')
 	now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-	with open('output.txt','a') as fp:
+	with open('output'+str(subnet2)+'.txt','a') as fp:
 	    fp.write('\n'.join(iplist))
-	    fp.write('\n\ndone for '+str(subnet3)+' subnet: '+ str(len(iplist)) +' IPs')
-	    fp.write('\n'+now+'\n\n')
+	    #fp.write('\n\ndone for '+str(subnet3)+' subnet: '+ str(len(iplist)) +' IPs')
+	    #fp.write('\n'+now+'\n\n')
 
     
 if __name__ == '__main__':
