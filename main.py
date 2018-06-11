@@ -7,4 +7,5 @@ def scan(subnet2):
         netSurveillance.subnetScan(subnet2,subnet3)
         
 if __name__ == '__main__':
-    scan(35)
+    for i in range(35,48,1):
+		scan(i)

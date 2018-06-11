@@ -65,6 +65,7 @@ def subnetScan(subnet2,subnet3):
 
 	with open('output'+str(subnet2)+'.txt','a') as fp:
 	    fp.write('\n'.join(iplist))
+        fp.write('\n')
 	    #fp.write('\n\ndone for '+str(subnet3)+' subnet: '+ str(len(iplist)) +' IPs')
 	    #fp.write('\n'+now+'\n\n')
 
